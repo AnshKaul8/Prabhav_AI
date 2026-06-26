@@ -1,6 +1,5 @@
 import numpy as np
 
-# Try to import Transformers and initialize RoBERTa sentiment classifier
 try:
     from transformers import pipeline
     # twitter-roberta-base-sentiment has labels: 0 -> Negative, 1 -> Neutral, 2 -> Positive

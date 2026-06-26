@@ -4,7 +4,7 @@ from backend.app.core.config import settings
 from backend.app.core.db import Base, engine
 from backend.app.routers import auth, brand, influencer, campaigns, collaborations
 
-# Trigger automatic database tables creation
+
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI(

@@ -16,13 +16,6 @@ try:
 except Exception:
     HAS_SKLEARN = False
 
-# We will build a helper that fits a predictive model on synthetic campaign data.
-# This data simulates a standard influencer marketing database where:
-# - Reach is correlated with total followers and platform.
-# - Engagement is correlated with followers (smaller creators have higher ER) and niche.
-# - Conversions is correlated with budget, engagement, and category match.
-# - Revenue is correlated with conversions and product pricing.
-
 def generate_synthetic_campaign_data(size=200):
     """Generates synthetic historical campaign data for training the regressor."""
     np.random.seed(42)
